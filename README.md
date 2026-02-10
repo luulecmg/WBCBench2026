@@ -51,7 +51,7 @@ conda activate wbc
 ```
 ### Step 3: Install Dependencies
 ```bash
-pip install torch torchvision numpy pandas scikit-learn Pillow torchstain matplotlib seaborn tqdm
+pip install pip install -r requirements.txt
 ```
 
 # Commands
@@ -70,6 +70,27 @@ jupyter notebook inference.ipynb
 #   - checkpoints/final_model_resnet50.pt
 #   - checkpoints/final_model_resnet152.pt
 ```
+
+# Compute Environment
+
+All experiments were conducted on **Kaggle** with the following hardware configuration:
+
+- **GPU**: 2 × NVIDIA Tesla T4 (16 GB VRAM each)
+- **CUDA**: 12.6
+- **cuDNN**: 9.1
+- **Framework**: PyTorch 2.8.0
+- **Operating System**: Linux (Kaggle notebook environment)
+
+### Training
+- Models were trained using **dual-GPU execution (2× Tesla T4)**
+- Mixed precision training (AMP) was enabled
+- Deterministic settings and fixed random seeds were applied for reproducibility
+
+### Inference
+- Inference was performed on **Tesla T4 GPUs**
+- Ensemble inference and Test-Time Augmentation (TTA) were executed sequentially
+- No multi-GPU parallelism was used during inference to ensure stable and reproducible predictions
+
 
 # Seed Settings & Determinism
 ```bash
