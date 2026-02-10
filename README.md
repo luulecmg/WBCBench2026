@@ -40,30 +40,7 @@ This work proposes a **two-stage decoupled learning strategy** combined with **e
 - Ensemble predictions using **weighted probability averaging**
 - Apply **post-processing adjustment** for rare classes based on the training class distribution
 
-
-# Environment Requirements
-```bash
-Python >= 3.8
-
-# Core packages
-torch >= 2.0.0
-torchvision >= 0.15.0
-numpy >= 1.21.0
-pandas >= 1.3.0
-scikit-learn >= 1.0.0
-Pillow >= 9.0.0
-
-# Stain normalization
-torchstain >= 1.2.0
-
-# Visualization
-matplotlib >= 3.5.0
-seaborn >= 0.11.0
-
-# Progress bar
-tqdm >= 4.62.0
-```
-## Install
+# Install
 ### Step 1: Create Conda Environment
 ```bash
 conda create -n wbc python=3.8 -y
