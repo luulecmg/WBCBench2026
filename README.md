@@ -53,6 +53,33 @@ conda activate wbc
 ```bash
 pip install pip install -r requirements.txt
 ```
+### Step 4: Download dataset
+Please download dataset from the ISBI WBC Challenge (https://www.kaggle.com/competitions/wbc-bench-2026/overview) and place it in the following directory structures:
+```bash
+wbc-isbi/
+├── phase1/
+│   ├── image_001.jpg
+│   ├── image_002.jpg
+│   └── ...
+│
+├── phase2/
+│   ├── train/
+│   │   ├── image_001.jpg
+│   │   └── ...
+│   │
+│   ├── eval/
+│   │   ├── image_001.jpg
+│   │   └── ...
+│   │
+│   └── test/
+│       ├── image_001.jpg
+│       └── ...
+│
+├── phase1_label.csv
+├── phase2_train.csv
+├── phase2_eval.csv
+└── phase2_test.csv
+```
 
 # Commands
 ## Training
