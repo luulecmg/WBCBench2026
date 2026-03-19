@@ -1,5 +1,13 @@
 # Decoupled Learning for White Blood Cell Classification
+Official implementation of the paper:
 
+**Robust White Blood Cell Classification with Stain-Normalized Decoupled Learning and Ensembling**
+
+Accepted at **IEEE International Symposium on Biomedical Imaging (ISBI) 2026**.
+
+📄 **Preprint:** https://arxiv.org/abs/2603.01976
+
+---
 ## Method Description
 
 This work proposes a **two-stage decoupled learning strategy** combined with **ensemble inference** to address class imbalance in white blood cell (WBC) classification.
@@ -134,4 +142,15 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # DataLoader worker seeding via seed_worker() and Generator
+```
+
+# Citation
+If you use this work in your research, please cite:
+```bash
+@article{le2026robust,
+  title={Robust White Blood Cell Classification with Stain-Normalized Decoupled Learning and Ensembling},
+  author={Le, Luu and Cao, Hoang-Loc and Pham, Ha-Hieu and Nguyen, Thanh-Huy and Bagci, Ulas},
+  journal={arXiv preprint arXiv:2603.01976},
+  year={2026}
+}
 ```
