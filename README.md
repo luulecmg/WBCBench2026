@@ -59,7 +59,7 @@ conda activate wbc
 ```
 ### Step 3: Install Dependencies
 ```bash
-pip install pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### Step 4: Download dataset
 Please download dataset from the ISBI WBC Challenge (https://www.kaggle.com/competitions/wbc-bench-2026/overview) and place it in the following directory structures:
